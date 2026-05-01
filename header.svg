@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" role="img" aria-label="Kianyce">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#d8d8d2"/>
+    </pattern>
+
+    <linearGradient id="rule" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#0a0a0a" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0a0a0a" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </linearGradient>
+
+    <style>
+      <![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+      .name {
+        font-family: 'Fraunces', 'Times New Roman', serif;
+        font-weight: 300;
+        font-size: 96px;
+        letter-spacing: -0.045em;
+        fill: #0a0a0a;
+      }
+      .name .stop { font-style: italic; font-weight: 500; fill: #c84a3a; }
+
+      .meta {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 11px;
+        letter-spacing: 0.22em;
+        fill: #6a6a6a;
+      }
+
+      .tag {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 14px;
+        fill: #2a2a2a;
+        letter-spacing: 0.01em;
+      }
+
+      .reveal {
+        animation: reveal 1.4s cubic-bezier(.22,.61,.36,1) forwards;
+      }
+      @keyframes reveal {
+        from { clip-path: inset(0 100% 0 0); }
+        to   { clip-path: inset(0 0 0 0); }
+      }
+
+      .word {
+        opacity: 0;
+        animation: fadein 0.3s ease-out forwards;
+      }
+      .w1 { animation-delay: 1.5s; }
+      .w2 { animation-delay: 1.9s; }
+      .w3 { animation-delay: 2.3s; }
+      .w4 { animation-delay: 2.7s; }
+      .w5 { animation-delay: 3.1s; }
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+      ]]>
+    </style>
+  </defs>
+
+  <rect width="900" height="220" fill="#faf8f3"/>
+  <rect width="900" height="220" fill="url(#dots)" opacity="0.5"/>
+
+  <g transform="translate(60, 42)">
+    <circle cx="0" cy="-3" r="3.5" fill="#c84a3a" class="pulse"/>
+    <text x="14" y="0" class="meta">KIANYCE · SOFTWARE</text>
+    <text x="840" y="0" class="meta" text-anchor="end">EST. ON GITHUB</text>
+  </g>
+
+  <rect x="60" y="54" width="780" height="1" fill="url(#rule)"/>
+
+  <g class="reveal">
+    <text x="56" y="142" class="name">Kianyce<tspan class="stop">.</tspan></text>
+  </g>
+
+  <g transform="translate(62, 188)">
+    <text class="tag">
+      <tspan fill="#c84a3a">&gt;</tspan>
+      <tspan class="word w1" dx="8">building</tspan>
+      <tspan class="word w2" dx="8" fill="#888">·</tspan>
+      <tspan class="word w3" dx="8">breaking</tspan>
+      <tspan class="word w4" dx="8" fill="#888">·</tspan>
+      <tspan class="word w5" dx="8">learning</tspan>
+    </text>
+  </g>
+</svg>
